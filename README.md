@@ -1,5 +1,5 @@
 # scroll-animation
-Animations applied to html elements when scrolled the element is scrolled into view.
+A plugin meant to apply animations to target elements when scrolled into view
 
 This was created due to my need for animations on scroll for small website projects, feel free to use whatever you need, hope this helps!
 
