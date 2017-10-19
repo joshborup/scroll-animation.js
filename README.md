@@ -1,5 +1,7 @@
 # scroll-animation
-Animations applied to html elements when scrolled into a screen using css animations and js
+Animations applied to html elements when scrolled the element is scrolled into view.
+
+This was created due to my need for animations on scroll for small website projects, feel free to use whatever you need, hope this helps!
 
 # Getting Started
 This is a fairly straight forward extension and can be applied to almost any project that needs animations on scroll.
