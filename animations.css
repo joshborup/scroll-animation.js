@@ -1,3 +1,10 @@
+.animation-element {
+    
+    opacity: 0;
+    
+}
+
+
 .in-view-up {
     
     -webkit-animation: slideup .5s  forwards 1;
