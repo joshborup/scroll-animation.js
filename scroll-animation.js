@@ -12,6 +12,7 @@ function check_if_in_view() {
     var element_top_position = $element.offset().top;
     var element_bottom_position = (element_top_position + element_height);
     var trigger_position = (element_top_position  <= window_bottom_position - 150);
+    var trigger_position_return = (element_top_position  >= window_bottom_position);
  
     //check to see if this current container is within viewport
     if (trigger_position && ($element.hasClass('slide-up') == true)) {
@@ -32,8 +33,10 @@ function check_if_in_view() {
             $element.addClass('in-view-right');
             
            
-    }
+    } else if (trigger_position_return)
       
+        $element.removeClass('in-view-right in-view-left in-view-up');
+        
   });
 }
 
