@@ -1,0 +1,274 @@
+.in-view-up {
+    
+    -webkit-animation: slideup .5s  forwards 1;
+    -moz-animation: slideup .5s  forwards 1;
+    -ms-animation: slideup .5s  forwards 1;
+    -o-animation: slideup .5s  forwards 1;
+    animation: slideup .5s  forwards 1;
+    
+}
+
+
+@-webkit-keyframes slideup {
+    
+    0% {
+        
+        -webkit-transform: translate(0px, 100px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-moz-keyframes slideup {
+    
+    0% {
+        
+        -moz-transform: translate(0px, 100px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -moz-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-ms-keyframes slideup {
+    
+    0% {
+        
+        -ms-transform: translate(0px, 100px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -ms-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-o-keyframes slideup {
+    
+    0% {
+        
+        -o-transform: translate(0px, 100px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -o-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@keyframes slideup {
+    
+    0% {
+        
+        transform: translate(0px, 100px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+
+.in-view-left {
+    -webkit-animation: slideleft .5s  forwards 1;
+    -moz-animation: slideleft .5s  forwards 1;
+    -ms-animation: slideleft .5s  forwards 1;
+    -o-animation: slideleft .5s  forwards 1;
+    animation: slideleft .5s  forwards 1;
+    
+}
+
+
+@-webkit-keyframes slideleft {
+    
+    0% {
+        
+        -webkit-transform: translate(-100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-moz-keyframes slideleft {
+    
+    0% {
+        
+        -moz-transform: translate(-100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -moz-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-ms-keyframes slideleft {
+    
+    0% {
+        
+        -ms-transform: translate(-100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -ms-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-o-keyframes slideleft {
+    
+    0% {
+        
+        -o-transform: translate(-100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -o-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+
+@keyframes slideleft {
+    
+    0% {
+        
+        transform: translate(-100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+
+.in-view-right {
+    -webkit-animation: slideright .5s  forwards 1;
+    -moz-animation: slideright .5s  forwards 1;
+    -ms-animation: slideright .5s  forwards 1;
+    -o-animation: slideright .5s forwards 1;
+    animation: slideright .5s forwards 1;
+    
+}
+
+
+@-webkit-keyframes slideright {
+    
+    0% {
+        
+        -webkit-transform: translate(100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-moz-keyframes slideright {
+    
+    0% {
+        
+        -moz-transform: translate(100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -moz-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-ms-keyframes slideright {
+    
+    0% {
+        
+        -ms-transform: translate(100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -ms-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@-o-keyframes slideright {
+    
+    0% {
+        
+        -o-transform: translate(100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        -o-transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
+@keyframes slideright {
+    
+    0% {
+        
+        transform: translate(100px, 0px);
+        
+    }
+    
+     100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+        
+    }
+    
+    
+}
