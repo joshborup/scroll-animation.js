@@ -59,7 +59,7 @@ After adding this class you have a few different animation options for when your
         transform: translate(0px, 0px);
         
      } 
-   }
+    }
 
 **'slide-left'** - the element will slide into the screen from the left
 
