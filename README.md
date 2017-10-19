@@ -8,6 +8,10 @@ This is a fairly straight forward extension and can be applied to almost any pro
 
 You want to make sure that you have the latest version of jquery which is the only dependency you need.
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+
+*cdn provided greatfully by https://code.jquery.com/*
+
 After making sure you have jquery installed, add this line to your header
 
     <link rel="stylesheet" href="path/to/css-folder/animations.css">
