@@ -1,0 +1,85 @@
+.animation-element {
+  opacity: 0;
+}
+.slide-up.in-view {
+  -webkit-animation: slideup .5s  forwards 1;
+          animation: slideup .5s  forwards 1;
+}
+.slide-left.in-view {
+  -webkit-animation: slideleft .5s  forwards 1;
+          animation: slideleft .5s  forwards 1;
+}
+.slide-right.in-view {
+  -webkit-animation: slideright .5s  forwards 1;
+          animation: slideright .5s forwards 1;
+}
+
+/*animations*/
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+@keyframes slideup {
+  0% {
+    -webkit-transform: translate(0px, 100px);
+            transform: translate(0px, 100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    -webkit-transform: translate(-100px, 0px);
+            transform: translate(-100px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+@keyframes slideleft {
+  0% {
+    -webkit-transform: translate(-100px, 0px);
+            transform: translate(-100px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes slideright {
+  0% {
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+@keyframes slideright {
+  0% {
+    -webkit-transform: translate(100px, 0px);
+            transform: translate(100px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
