@@ -1,0 +1,110 @@
+body {
+  background: black;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.btn {
+  font-weight: 600;
+  color: white!important;
+}
+
+
+footer {
+
+  padding: 1rem;
+  background-color: #232323;
+  text-align: center;
+}
+
+#returnarrow {
+
+  color: white;
+  background: linear-gradient(#D309D3,#c403c4,#D309D3);
+  padding: .3rem;
+  width: 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+
+}
+
+.begin-scroll {
+
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 3rem;
+
+}
+
+
+
+.begin-scroll img{
+
+  width: 2.5rem;
+
+}
+
+.container-fluid {
+
+  max-width: 1400px;
+
+}
+
+.container-fluid .row div:nth-child(1) div, .container-fluid .row div:nth-child(4) div, .container-fluid .row div:nth-child(7) div, .container-fluid .row div:nth-child(10) div, .container-fluid .row div:nth-child(13) div, .container-fluid .row div:nth-child(16) div {
+
+  margin: 15px;
+  height: 200px;
+  width: 80%;
+  max-width: 200px;
+  background: linear-gradient(#EA548A,#E31D65, #EA548A);
+  border-radius: 1rem;
+  margin: 2rem auto;
+
+}
+
+.container-fluid .row div:nth-child(2) div, .container-fluid .row div:nth-child(5) div, .container-fluid .row div:nth-child(8) div, .container-fluid .row div:nth-child(11) div, .container-fluid .row div:nth-child(14) div, .container-fluid .row div:nth-child(17) div  {
+
+  margin: 15px;
+  height: 200px;
+  width: 80%;
+  max-width: 200px;
+  background: linear-gradient(#FFDF5F,#FFCE09, #FFDF5F);
+  border-radius: 1rem;
+  margin: 2rem auto;
+}
+
+.container-fluid .row div:nth-child(3) div, .container-fluid .row div:nth-child(6) div, .container-fluid .row div:nth-child(9) div, .container-fluid .row div:nth-child(12) div, .container-fluid .row div:nth-child(15) div, .container-fluid .row div:nth-child(18) div  {
+
+  margin: 2rem auto;
+  height: 200px;
+  width: 80%;
+  max-width: 200px;
+  background: linear-gradient(#48A7B4,#008597,#48A7B4);
+  border-radius: 1rem; 
+
+}
+
+@media screen and (max-width:991px) {
+
+  .begin-scroll {
+
+    font-size: 1rem;
+
+  }
+
+  .jumbotron h1 {
+
+    font-size: 3rem;
+
+  }
+
+  .jumbotron p {
+
+    font-size: 1rem;
+
+  }
+
+}
+
