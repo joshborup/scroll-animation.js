@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: white;
 }
 
 .jumbotron {
@@ -82,7 +82,7 @@ footer {
   width: 80%;
   max-width: 200px;
   background: linear-gradient(#48A7B4,#008597,#48A7B4);
-  border-radius: 1rem; 
+  border-radius: 1rem;
 
 }
 
@@ -107,4 +107,3 @@ footer {
   }
 
 }
-
