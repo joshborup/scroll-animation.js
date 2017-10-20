@@ -1,6 +1,7 @@
 import '../styles/animations.css';
 
 import raf from 'raf';
+import debounce from 'lodash/debounce';
 import { isPartiallyInViewport } from './viewport-utils';
 
 function ScrollAnimations() {
@@ -13,6 +14,8 @@ function ScrollAnimations() {
     animation_elements.forEach((element) => {
       if (isPartiallyInViewport(element)) {
         element.classList.add('in-view');
+      } else if (element.classList.contains('in-view')) {
+        element.classList.remove('in-view');
       }
     });
   };
@@ -21,8 +24,15 @@ function ScrollAnimations() {
     raf(check_if_in_view);
   };
 
+  const handleResize = () => {
+    check_if_in_view();
+  };
+
+  const debouncedResizeHandler = debounce(handleResize, 60);
+
   const bindListeners = () => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', debouncedResizeHandler);
   };
 
   // run once on load then bind scroll event listener.
