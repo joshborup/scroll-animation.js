@@ -1,36 +1,38 @@
 import '../styles/animations.css';
 
-var $animation_elements = $('.animation-element');
-var $window = $(window);
+import raf from 'raf';
+import { isPartiallyInViewport } from './viewport-utils';
 
-function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
+function ScrollAnimations() {
+  let animation_elements = Array.from(document.querySelectorAll('.animation-element'));
 
-  $.each($animation_elements, function() {
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
-    var trigger_position = (element_top_position  <= window_bottom_position - 150);
-    var trigger_position_return = (element_top_position  >= window_bottom_position);
+  // Loops through each element, passing it through a utility function that detects
+  // if an element's edges are partially inside the browser's viewport.
+  // If the utility function returns true, the 'in-view' class is added to the element.
+  const check_if_in_view = () => {
+    animation_elements.forEach((element) => {
+      if (isPartiallyInViewport(element)) {
+        element.classList.add('in-view');
+      }
+    });
+  };
 
-    //check to see if this current container is within viewport
-    if (trigger_position && ($element.hasClass('animation-element') == true)) {
-      $element.addClass('in-view');
-    }
-  });
+  const handleScroll = () => {
+    raf(check_if_in_view);
+  };
+
+  const bindListeners = () => {
+    window.addEventListener('scroll', handleScroll);
+  };
+
+  // run once on load then bind scroll event listener.
+  const init = () => {
+    check_if_in_view();
+    bindListeners();
+  };
+
+  // Kick everything off
+  init();
 }
 
-function throttle(fn, wait) {
-  var time = Date.now();
-  return function() {
-    if ((time + wait - Date.now()) < 0) {
-      fn();
-      time = Date.now();
-    }
-  }
-}
-
-$(window).on('scroll', throttle(check_if_in_view, 200));
+ScrollAnimations();
