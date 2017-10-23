@@ -6,25 +6,11 @@ This was created due to my need for animations on scroll for small website proje
 # Getting Started
 This is a fairly straight forward extension and can be applied to almost any project that needs animations on scroll.
 
-You want to make sure that you have the latest version of jquery which is the only dependency you need.
+This has been designed to not need any dependencies, you simply need to add the javascript file to the footer 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="dist/scroll-animation.js"></script>
 
-*cdn provided greatfully by https://code.jquery.com/*
-
-After making sure you have jquery installed, add this line to your header
-
-    <link rel="stylesheet" href="path/to/css-folder/animations.css">
-
-and replace the 'path/to/css-folder' with the path to your css folder.
-
-add the javascript file to the footer 
-
-    <script src="path/to/js-folder/scroll-animation.js"></script>
-
-and replace the 'path/to/js-folder' with the path to your js folder.
-
-Every element that you would like to animated must have a class of 'animation-element'.
+Every element that you would like to animate must have a class of 'animation-element'.
 
 **'animation-element'** - this is what tells the js which element to target
 
