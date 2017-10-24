@@ -26,61 +26,70 @@ After adding this class you have a few different animation options for when your
 
 **'slide-up'** - the element will slide into the screen from the bottom
 
-    .in-view-up {
+    .slide-up.in-view {
     
-        animation: slideup .5s  forwards 1;
+                animation: slideup .5s  forwards 1;
         
            {
 
     @keyframes slideup {
+    
       0% {
+       
+                transform: translate(0px, 100px);
+                
+      }
+      100% {
       
-        transform: translate(0px, 100px);
-        
-         }
-         
-     100% {
-     
-        opacity: 1;
-        transform: translate(0px, 0px);
-        
-     } 
+                opacity: 1;
+                transform: translate(0px, 0px);
+                
+      }
     }
 
 **'slide-left'** - the element will slide into the screen from the left
 
-      .in-view-left {
-          
-          animation: slideleft .5s  forwards 1;
-          
-          }
+      .slide-left.in-view {
+    
+                animation: slideleft .5s  forwards 1;
+        
+           {
 
-      @keyframes slideleft {
-          0% {
-              transform: translate(-100px, 0px);      
-          }
-           100% {
-              opacity: 1;
-              transform: translate(0px, 0px);   
-          } 
+       @keyframes slideleft {
+       
+      0% {
+       
+                transform: translate(-100px, 0px);
+                
       }
-
+      100% {
+      
+                opacity: 1;
+                transform: translate(0px, 0px);
+                
+      }
+    }
 **'slide-right'** - the element will slide into the screen from the right
 
-      .in-view-right {
+        .slide-right.in-view {
+    
+                animation: slideright .5s  forwards 1;
+        
+           {
 
-          animation: slideright .5s forwards 1;
+       @keyframes slideright {
+      0% {
+       
+                transform: translate(100px, 0px);
+                
       }
-
-      @keyframes slideright {
-          0% {
-              transform: translate(100px, 0px);      
-          }
-           100% {
-              opacity: 1;
-              transform: translate(0px, 0px);   
-          } 
+      100% {
+      
+                opacity: 1;
+                transform: translate(0px, 0px);
+                
       }
+    }
       
       
  # Usage examples
